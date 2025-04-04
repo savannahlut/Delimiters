@@ -10,8 +10,7 @@ public class Delimiters {
     * close delimiter.
     * Precondition: open and close are non-empty strings.
     */
-    public Delimiters(String open, String close)
-    {
+    public Delimiters(String open, String close){
     openDel = open;
     closeDel = close;
     }
@@ -28,8 +27,11 @@ public class Delimiters {
     /** Returns true if the delimiters are balanced and false otherwise, as described in part (b).
     * Precondition: delimiters contains only valid open and close delimiters.
     */
-    public boolean isBalanced(ArrayList<String> delimiters)
-    { /* to be implemented in part (b) */ }
+    public boolean isBalanced(ArrayList<String> delimiters){
+        for(String t : delimiters){
+            
+        }
+    }
 
     // There may be instance variables, constructors, and methods that are not shown.
 }
