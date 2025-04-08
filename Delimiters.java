@@ -28,9 +28,14 @@ public class Delimiters {
     * Precondition: delimiters contains only valid open and close delimiters.
     */
     public boolean isBalanced(ArrayList<String> delimiters){
+        int opens = 0;
+        int closes = 0; 
         for(String t : delimiters){
-            
+            if(t.equals(openDel)) opens++;
+            if(t.equals(closeDel)) closes++;
+            if(closes > opens) return false;
         }
+        return opens == closes;
     }
 
     // There may be instance variables, constructors, and methods that are not shown.
